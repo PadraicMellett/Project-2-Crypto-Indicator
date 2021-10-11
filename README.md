@@ -1,6 +1,8 @@
 Project Description
 
--	Our goal is to test the performance off 3 major trading indicators that generate buy and sell signals to test their performance over a given time series on 3 major stock assets. - All indicators are oscillators, meaning they oscillate between a range of values
+-	Our goal is to test the performance off 3 major trading indicators that generate buy and sell signals to test their performance over a given time series on 3 major stock assets
+
+- All indicators are oscillators, meaning they oscillate between a range of values
 
 Indicators:
 -	MACD – Moving Average Convergence Divergence
