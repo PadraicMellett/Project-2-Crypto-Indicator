@@ -14,7 +14,7 @@ Assets:
 -	GOOG – Google
 -	AAPL – Apple
 
--	Weekly time series be used on the above-mentioned assets. Final analysis conducted on the price close of each asset over the time series. Each time series begins in 2010/11
+-	Weekly time series be used on the above-mentioned assets. Final analysis conducted on the price close of each asset over the time series.
 
 Data Source:
 -	Stock data and indicator data relative to the above assets has been taken from www.alphavantage.co. Utilising the API, JSON data has been extracted then converted in data frames for analysis
