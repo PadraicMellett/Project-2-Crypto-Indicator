@@ -23,10 +23,6 @@ google_engine = create_engine(f'postgresql://{asset_connection_string}')
 asset_connection_string = "postgres:dataprojects123@localhost:5432/Tesla" 
 tesla_engine = create_engine(f'postgresql://{asset_connection_string}')
 
-# Google
-
-# Tesla
-
 # reflect an existing database into a new model - convert to python classes
 Base_apple = automap_base()
 Base_google = automap_base()
@@ -35,10 +31,9 @@ Base_tesla = automap_base()
 # reflect the tables
 Base_apple.prepare(apple_engine, reflect=True)
 
-Base_google.prepare(apple_engine, reflect=True)
+Base_google.prepare(google_engine, reflect=True)
 
-Base_tesla.prepare(apple_engine, reflect=True)
-
+Base_tesla.prepare(tesla_engine, reflect=True)
 
 #Apple Tables
 
