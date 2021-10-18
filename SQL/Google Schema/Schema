@@ -1,1 +1,147 @@
+-- Table: public.apple_stoch_results
 
+-- DROP TABLE public.apple_stoch_results;
+
+CREATE TABLE public.apple_stoch_results
+(
+    level_0 numeric,
+    index integer NOT NULL,
+    "Date" date,
+    "Close" numeric,
+    "SlowK" numeric,
+    "Buy" boolean,
+    "Sell" boolean,
+    capital numeric,
+    shares numeric,
+    CONSTRAINT apple_stoch_results_pkey PRIMARY KEY (index)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.apple_stoch_results
+    OWNER to postgres;
+    
+################################################################
+
+-- Table: public.google_macd_results
+
+-- DROP TABLE public.google_macd_results;
+
+CREATE TABLE public.google_macd_results
+(
+    index integer NOT NULL DEFAULT nextval('google_macd_results_index_seq'::regclass),
+    "Date" date,
+    "Close" numeric,
+    "Hist" numeric,
+    "Buy" boolean,
+    "Sell" boolean,
+    capital numeric,
+    shares numeric,
+    CONSTRAINT google_macd_results_pkey PRIMARY KEY (index)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.google_macd_results
+    OWNER to postgres;
+    
+ ##################################################################
+ 
+ -- Table: public.google_rsi_data
+
+-- DROP TABLE public.google_rsi_data;
+
+CREATE TABLE public.google_rsi_data
+(
+    index integer NOT NULL DEFAULT nextval('google_rsi_data_index_seq'::regclass),
+    "Date" date,
+    "Open" numeric,
+    "High" numeric,
+    "Low" numeric,
+    "Close" numeric,
+    "Volume" numeric,
+    "RSI" numeric,
+    CONSTRAINT google_rsi_data_pkey PRIMARY KEY (index)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.google_rsi_data
+    OWNER to postgres;
+    
+ ################################################################
+ 
+ -- Table: public.google_rsi_results
+
+-- DROP TABLE public.google_rsi_results;
+
+CREATE TABLE public.google_rsi_results
+(
+    level_0 numeric,
+    index integer NOT NULL DEFAULT nextval('google_rsi_results_index_seq'::regclass),
+    "Date" date,
+    "Close" numeric,
+    "RSI" numeric,
+    "Buy" boolean,
+    "Sell" boolean,
+    capital numeric,
+    shares numeric,
+    CONSTRAINT google_rsi_results_pkey PRIMARY KEY (index)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.google_rsi_results
+    OWNER to postgres;
+    
+ ##############################################################
+ 
+ -- Table: public.google_stoch_data
+
+-- DROP TABLE public.google_stoch_data;
+
+CREATE TABLE public.google_stoch_data
+(
+    index integer NOT NULL DEFAULT nextval('google_stoch_data_index_seq'::regclass),
+    "Date" date,
+    "Open" numeric,
+    "High" numeric,
+    "Low" numeric,
+    "Close" numeric,
+    "Volume" numeric,
+    "SlowK" numeric,
+    "SlowD" numeric,
+    CONSTRAINT google_stoch_data_pkey PRIMARY KEY (index)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.google_stoch_data
+    OWNER to postgres;
+    
+##############################################################
+
+-- Table: public.google_stoch_results
+
+-- DROP TABLE public.google_stoch_results;
+
+CREATE TABLE public.google_stoch_results
+(
+    level_0 numeric,
+    index integer NOT NULL DEFAULT nextval('google_stoch_results_index_seq'::regclass),
+    "Date" date,
+    "Close" numeric,
+    "SlowK" numeric,
+    "Buy" boolean,
+    "Sell" boolean,
+    capital numeric,
+    shares numeric,
+    CONSTRAINT google_stoch_results_pkey PRIMARY KEY (index)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.google_stoch_results
+    OWNER to postgres;
+
+ 
