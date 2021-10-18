@@ -1,24 +1,25 @@
--- Table: public.apple_stoch_results
+-- Table: public.google_macd_data
 
--- DROP TABLE public.apple_stoch_results;
+-- DROP TABLE public.google_macd_data;
 
-CREATE TABLE public.apple_stoch_results
+CREATE TABLE public.google_macd_data
 (
-    level_0 numeric,
-    index integer NOT NULL,
+    index integer NOT NULL DEFAULT nextval('google_macd_data_index_seq'::regclass),
     "Date" date,
+    "Open" numeric,
+    "High" numeric,
+    "Low" numeric,
     "Close" numeric,
-    "SlowK" numeric,
-    "Buy" boolean,
-    "Sell" boolean,
-    capital numeric,
-    shares numeric,
-    CONSTRAINT apple_stoch_results_pkey PRIMARY KEY (index)
+    "Volume" numeric,
+    "MACD" numeric,
+    "Hist" numeric,
+    "MACD Value" numeric,
+    CONSTRAINT google_macd_data_pkey PRIMARY KEY (index)
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public.apple_stoch_results
+ALTER TABLE public.google_macd_data
     OWNER to postgres;
     
 ################################################################
@@ -45,7 +46,7 @@ TABLESPACE pg_default;
 ALTER TABLE public.google_macd_results
     OWNER to postgres;
     
- ##################################################################
+ ################################################################
  
  -- Table: public.google_rsi_data
 
