@@ -48,7 +48,7 @@ ALTER TABLE public.google_macd_results
     
  ################################################################
  
- -- Table: public.google_rsi_data
+-- Table: public.google_rsi_data
 
 -- DROP TABLE public.google_rsi_data;
 
@@ -72,7 +72,7 @@ ALTER TABLE public.google_rsi_data
     
  ################################################################
  
- -- Table: public.google_rsi_results
+-- Table: public.google_rsi_results
 
 -- DROP TABLE public.google_rsi_results;
 
@@ -97,7 +97,7 @@ ALTER TABLE public.google_rsi_results
     
  ##############################################################
  
- -- Table: public.google_stoch_data
+-- Table: public.google_stoch_data
 
 -- DROP TABLE public.google_stoch_data;
 
