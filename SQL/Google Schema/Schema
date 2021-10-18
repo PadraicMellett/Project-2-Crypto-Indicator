@@ -4,7 +4,7 @@
 
 CREATE TABLE public.google_macd_data
 (
-    index integer NOT NULL DEFAULT nextval('google_macd_data_index_seq'::regclass),
+    index integer,
     "Date" date,
     "Open" numeric,
     "High" numeric,
@@ -30,7 +30,7 @@ ALTER TABLE public.google_macd_data
 
 CREATE TABLE public.google_macd_results
 (
-    index integer NOT NULL DEFAULT nextval('google_macd_results_index_seq'::regclass),
+    "index" integer,
     "Date" date,
     "Close" numeric,
     "Hist" numeric,
@@ -54,7 +54,7 @@ ALTER TABLE public.google_macd_results
 
 CREATE TABLE public.google_rsi_data
 (
-    index integer NOT NULL DEFAULT nextval('google_rsi_data_index_seq'::regclass),
+    "index" integer,
     "Date" date,
     "Open" numeric,
     "High" numeric,
@@ -79,7 +79,7 @@ ALTER TABLE public.google_rsi_data
 CREATE TABLE public.google_rsi_results
 (
     level_0 numeric,
-    index integer NOT NULL DEFAULT nextval('google_rsi_results_index_seq'::regclass),
+    "index" integer,
     "Date" date,
     "Close" numeric,
     "RSI" numeric,
@@ -103,7 +103,7 @@ ALTER TABLE public.google_rsi_results
 
 CREATE TABLE public.google_stoch_data
 (
-    index integer NOT NULL DEFAULT nextval('google_stoch_data_index_seq'::regclass),
+    "index" integer,
     "Date" date,
     "Open" numeric,
     "High" numeric,
@@ -129,7 +129,7 @@ ALTER TABLE public.google_stoch_data
 CREATE TABLE public.google_stoch_results
 (
     level_0 numeric,
-    index integer NOT NULL DEFAULT nextval('google_stoch_results_index_seq'::regclass),
+    "index" integer,
     "Date" date,
     "Close" numeric,
     "SlowK" numeric,
