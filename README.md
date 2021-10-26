@@ -20,5 +20,4 @@ Data Source:
 -	Stock data and indicator data relative to the above assets has been taken from www.alphavantage.co. Utilising the API, JSON data has been extracted then converted in data frames for analysis
 
 Final Output:
--	Visualised data showing remaining capital and shares over the time series for each indicator and stock
--	Visualisation of the stock prices over the time series as well as entry and exit signals 
+-	Combined time series with buy/sell signals for each indicator along with the amount of shares and capital remaining after each time interval
